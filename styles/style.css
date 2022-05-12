@@ -176,4 +176,68 @@ main .main-container .btn-continue a button:hover {
     width: 85vw;
   }
 }
+
+.input-container input {
+  margin-top: 1vh;
+  margin-bottom: 5vh;
+  padding: 10px;
+  width: 42vw;
+  background-color: #F3F1F1;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.input-container input:hover, .input-container input:focus {
+  background-color: lightgrey;
+  -webkit-transition: 240ms ease-in-out;
+  transition: 240ms ease-in-out;
+}
+
+.btn-start a button {
+  width: 42vw;
+  height: 8vh;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+  background-color: #FFA451;
+  color: white;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+  font-size: 0.96rem;
+  cursor: pointer;
+}
+
+.btn-start a button:hover {
+  background-color: #e69449;
+  -webkit-box-shadow: 0 5px 8px 0 black;
+          box-shadow: 0 5px 8px 0 black;
+  -webkit-transition: 240ms ease-in-out;
+  transition: 240ms ease-in-out;
+}
+
+@media screen and (max-width: 912px) {
+  .input-container h3 {
+    text-align: left;
+  }
+  .input-container input {
+    width: 50vw;
+  }
+  .btn-start a button {
+    width: 50vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .input-container h3 {
+    text-align: left;
+  }
+  .input-container input {
+    width: 75vw;
+  }
+  .btn-start a button {
+    width: 75vw;
+  }
+}
 /*# sourceMappingURL=style.css.map */

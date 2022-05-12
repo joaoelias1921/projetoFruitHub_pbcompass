@@ -1,0 +1,78 @@
+@import '../abstract/variables';
+
+.input-container {
+    input {
+        margin-top: 1vh;
+        margin-bottom: 5vh;
+        padding: 10px;
+        width: 42vw;
+        background-color: #F3F1F1;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        font-family: $mainFont;
+        &:hover, &:focus {
+            background-color: lightgrey;
+            transition: 240ms ease-in-out;
+        }
+    }
+}
+
+.btn-start {
+    a {
+        button {
+            width: 42vw;
+            height: 8vh;
+            outline: none;
+            border-radius: 10px;
+            border: none;
+            background-color: $primaryColor;
+            color: white;
+            font-family: $mainFont;
+            font-weight: bold;
+            font-size: $textFontSize*0.8;
+            cursor: pointer;
+            &:hover {
+                background-color: $primaryColor*0.9;
+                box-shadow: 0 5px 8px 0 black;
+                transition: 240ms ease-in-out;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 912px) {
+    .input-container {
+        h3 {
+            text-align: left;
+        }
+        input {
+            width: 50vw;
+        }
+    }
+    .btn-start {
+        a {
+            button {
+                width: 50vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .input-container {
+        h3 {
+            text-align: left;
+        }
+        input {
+            width: 75vw;
+        }
+    }
+    .btn-start {
+        a {
+            button {
+                width: 75vw;
+            }
+        }
+    }
+}
