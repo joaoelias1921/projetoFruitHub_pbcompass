@@ -1,0 +1,113 @@
+@import '../abstract/variables';
+
+header {
+    width: 100%;
+    height: 60%;
+    background-color: $primaryColor;
+    @include centered();
+    img {
+        margin-top: 5vh;
+        width: 300px;
+    }
+}
+
+main {
+    width: 100%;
+    height: 40%;
+    @include centered();
+    .main-container {
+        @include centered();
+        h3 {
+            font-weight: bold;
+            margin: 10vh auto 2vh auto;
+            color: $fontColor;
+        }
+        p {
+            margin-bottom: 10vh;
+            color: $fontColor;
+        }
+        .btn-continue {
+            a {
+                button {
+                    width: 42vw;
+                    height: 8vh;
+                    outline: none;
+                    border-radius: 10px;
+                    border: none;
+                    background-color: $primaryColor;
+                    color: white;
+                    font-family: $mainFont;
+                    font-weight: bold;
+                    font-size: $textFontSize*0.8;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: $primaryColor*0.9;
+                        box-shadow: 0 5px 8px 0 black;
+                        transition: 240ms ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 912px) {
+    main{
+        .main-container {
+            .text-container {
+                width: 80%;
+                padding-left: 10px;
+                h3 {
+                    padding-right: 25px;
+                    font-size: $textFontSize*0.9;
+                    text-align: left;    
+                }
+                p {
+                    padding-right: 30px;
+                    font-size: $textFontSize*0.9;
+                    text-align: left;
+                }
+            }            
+            .btn-continue {
+                a {
+                    button {
+                        width: 80vw;
+                    }
+                }
+            }
+        }
+    }    
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        img {
+            margin-top: 10vh;
+        }
+    }
+    main{
+        .main-container {
+            .text-container {
+                width: 90%;
+                padding-left: 10px;
+                h3 {
+                    padding-right: 25px;
+                    font-size: $textFontSize*0.9;
+                    text-align: left;    
+                }
+                p {
+                    padding-right: 30px;
+                    font-size: $textFontSize*0.9;
+                    text-align: left;
+                }
+            }            
+            .btn-continue {
+                a {
+                    button {
+                        width: 85vw;
+                    }
+                }
+            }
+        }
+    }    
+}

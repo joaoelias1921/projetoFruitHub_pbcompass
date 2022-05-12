@@ -1,0 +1,39 @@
+@import '../abstract/variables';
+
+main {
+    .logo-container {
+        width: 100%;
+        height: 100%;
+        img {
+            margin-top: 8%;
+            width: 300px;
+            &:hover {
+                transform: rotate(360deg);
+                transition: 1s;
+            }            
+        }
+    }
+}
+
+
+@media screen and (max-width: 912px) {
+    main {
+        .logo-container {
+            img {
+                margin-top: 20%;
+                width: 250px;
+            }
+        }
+    }    
+}
+
+@media screen and (max-width: 480px) {
+    main {
+        .logo-container {
+            img {
+                margin-top: 50%;
+                width: 200px;
+            }
+        }
+    }    
+}
