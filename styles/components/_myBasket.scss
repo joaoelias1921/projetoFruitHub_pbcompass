@@ -1,0 +1,152 @@
+@import '../abstract/variables';
+
+.mybasket-top {
+    @include centered();
+    flex-direction: row;
+    width: 100%;
+    background-color: $primaryColor;
+    .go-back {
+        width: 30%;
+        @include centered();
+        align-items: flex-start;
+        img {
+            margin: 0.5% 0 0 8%;
+            position: absolute;
+        }
+        button {
+            background-color: white;
+            outline: none;
+            border: none;
+            border-radius: 20px;
+            width: 110%;
+            padding: 8px 6px 8px 20px;
+            margin: 5% 0 0 25%;
+            font-family: $mainFont;
+        }
+    }
+
+    .mybasket-title {
+        width: 100%;
+        h1 {
+            text-align: center;
+            color: white;
+            margin: 13% 30% 13% 0;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.checkout-items {
+    @include centered();
+    width: 100%;
+    ul {
+        @include centered();
+        width: 100%;
+        li {
+            @include centered();
+            flex-direction: row;
+            width: 100%;
+            .item-image {
+                @include centered();
+                width: 20%;
+                height: 4rem;
+                margin: 10% 3% 3% 7%;
+                outline: none;
+                border-radius: 10px; 
+                img {
+                    margin: 10%;
+                    width: 45px;
+                }
+            }
+            .item-desc {
+                margin-top: 6%;
+                line-height: 25px;
+                width: 50%;
+                text-align: left;
+                font-size: 0.9rem;
+                h1 {
+                    font-weight: bold;
+                }
+            }
+            .item-price {
+                display: flex;
+                flex-direction: row;
+                width: 30%;
+                img {
+                    width: 15px;
+                    height: 14px;
+                }
+                p {
+                    font-weight: bold;
+                    margin-left: 5%;
+                    margin-right: 7%;
+                }
+            }
+            &:first-child {
+                .item-image {
+                    background-color: #ffeddc;
+                }
+            }
+            &:nth-child(2) {
+                .item-image {
+                    background-color: #f3f1f1;
+                }
+            }
+            &:last-child {
+                .item-image {
+                    background-color: #FEF0F0;
+                }
+            }
+        }
+    }
+}
+
+.mybasket-footer {
+    @include centered();
+    width: 100%;
+    margin-top: 40%;
+    flex-direction: row;
+    .price-section {
+        @include centered();
+        width: 30%;
+        .total-title {
+            width: 100%;
+            margin-left: 40%;
+            margin-bottom: 10%;
+            h1 {
+                text-align: left;
+                font-weight: bold
+            }
+        }
+        .total {
+            width: 100%;
+            margin-left: 40%;
+            display: flex;
+            flex-direction: row;
+            img {
+                width: 20px;
+                height: 15px;
+                align-self: center;
+            }
+            p {
+                font-size: 1.2rem;
+                margin-left: 5%;
+                font-weight: bold;
+            }
+        }
+    }
+    .checkout-btn {
+        @include centered();
+        width: 70%;
+        button {
+            width: 13rem;
+            background-color: $primaryColor;
+            font-family: $mainFont;
+            color: white;
+            outline: none;
+            border: none;
+            border-radius: 10px;
+            padding: 20px;
+        }
+    }
+}

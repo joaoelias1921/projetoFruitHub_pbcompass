@@ -353,6 +353,9 @@ main .main-container .btn-continue a button:hover {
 
 .text-section .search-input input {
   background-color: #F3F1F1;
+  background-image: url(/images/search.png);
+  background-repeat: no-repeat;
+  background-position: 5%;
   width: 60vw;
   padding: 15px;
   padding-left: 5vw;
@@ -770,10 +773,11 @@ main .main-container .btn-continue a button:hover {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  margin-top: 5%;
 }
 
 .general .basketadd-top .go-back img {
-  margin: 2.5% 0 0 7%;
+  margin: 1% 0 0 8%;
   position: absolute;
 }
 
@@ -782,9 +786,9 @@ main .main-container .btn-continue a button:hover {
   outline: none;
   border: none;
   border-radius: 20px;
-  width: 20%;
+  width: 100%;
   padding: 8px 6px 8px 20px;
-  margin: 5% 0 0 5%;
+  margin: 8% 0 0 30%;
   font-family: "Lato", sans-serif;
 }
 
@@ -896,6 +900,7 @@ main .main-container .btn-continue a button:hover {
 
 .general .basketadd-details .amount .price p {
   font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .general .basketadd-details .description {
@@ -994,5 +999,308 @@ main .main-container .btn-continue a button:hover {
   border: none;
   border-radius: 10px;
   margin-left: 15%;
+}
+
+.mybasket-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  width: 100%;
+  background-color: #FFA451;
+}
+
+.mybasket-top .go-back {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.mybasket-top .go-back img {
+  margin: 0.5% 0 0 8%;
+  position: absolute;
+}
+
+.mybasket-top .go-back button {
+  background-color: white;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  width: 110%;
+  padding: 8px 6px 8px 20px;
+  margin: 5% 0 0 25%;
+  font-family: "Lato", sans-serif;
+}
+
+.mybasket-top .mybasket-title {
+  width: 100%;
+}
+
+.mybasket-top .mybasket-title h1 {
+  text-align: center;
+  color: white;
+  margin: 13% 30% 13% 0;
+  font-size: 1.2rem;
+}
+
+.checkout-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.checkout-items ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.checkout-items ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  width: 100%;
+}
+
+.checkout-items ul li .item-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 20%;
+  height: 4rem;
+  margin: 10% 3% 3% 7%;
+  outline: none;
+  border-radius: 10px;
+}
+
+.checkout-items ul li .item-image img {
+  margin: 10%;
+  width: 45px;
+}
+
+.checkout-items ul li .item-desc {
+  margin-top: 6%;
+  line-height: 25px;
+  width: 50%;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.checkout-items ul li .item-desc h1 {
+  font-weight: bold;
+}
+
+.checkout-items ul li .item-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 30%;
+}
+
+.checkout-items ul li .item-price img {
+  width: 15px;
+  height: 14px;
+}
+
+.checkout-items ul li .item-price p {
+  font-weight: bold;
+  margin-left: 5%;
+  margin-right: 7%;
+}
+
+.checkout-items ul li:first-child .item-image {
+  background-color: #ffeddc;
+}
+
+.checkout-items ul li:nth-child(2) .item-image {
+  background-color: #f3f1f1;
+}
+
+.checkout-items ul li:last-child .item-image {
+  background-color: #FEF0F0;
+}
+
+.mybasket-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 100%;
+  margin-top: 40%;
+  -ms-flex-direction: row;
+      flex-direction: row;
+}
+
+.mybasket-footer .price-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 30%;
+}
+
+.mybasket-footer .price-section .total-title {
+  width: 100%;
+  margin-left: 40%;
+  margin-bottom: 10%;
+}
+
+.mybasket-footer .price-section .total-title h1 {
+  text-align: left;
+  font-weight: bold;
+}
+
+.mybasket-footer .price-section .total {
+  width: 100%;
+  margin-left: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.mybasket-footer .price-section .total img {
+  width: 20px;
+  height: 15px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.mybasket-footer .price-section .total p {
+  font-size: 1.2rem;
+  margin-left: 5%;
+  font-weight: bold;
+}
+
+.mybasket-footer .checkout-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 70%;
+}
+
+.mybasket-footer .checkout-btn button {
+  width: 13rem;
+  background-color: #FFA451;
+  font-family: "Lato", sans-serif;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
 }
 /*# sourceMappingURL=style.css.map */
