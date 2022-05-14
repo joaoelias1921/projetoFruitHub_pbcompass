@@ -6,7 +6,8 @@
 }
 
 html, body {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Lato", sans-serif;
+  color: #27214D;
 }
 
 main .logo-container {
@@ -40,7 +41,7 @@ main .logo-container img:hover {
   }
 }
 
-header {
+.fruit-header {
   width: 100%;
   height: 60%;
   background-color: #FFA451;
@@ -60,7 +61,7 @@ header {
   text-align: center;
 }
 
-header img {
+.fruit-header .fruitbasket img {
   margin-top: 5vh;
   width: 300px;
 }
@@ -103,13 +104,13 @@ main .main-container {
 
 main .main-container h3 {
   font-weight: bold;
-  margin: 10vh auto 2vh auto;
-  color: #27214D;
+  margin: 6vh auto 2vh auto;
+  font-size: 1.2rem;
 }
 
 main .main-container p {
   margin-bottom: 10vh;
-  color: #27214D;
+  font-size: 1.2rem;
 }
 
 main .main-container .btn-continue a button {
@@ -120,7 +121,7 @@ main .main-container .btn-continue a button {
   border: none;
   background-color: #FFA451;
   color: white;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: bold;
   font-size: 0.96rem;
   cursor: pointer;
@@ -155,7 +156,7 @@ main .main-container .btn-continue a button:hover {
 }
 
 @media screen and (max-width: 480px) {
-  header img {
+  .fruit-header .fruitbasket img {
     margin-top: 10vh;
   }
   main .main-container .text-container {
@@ -163,18 +164,23 @@ main .main-container .btn-continue a button:hover {
     padding-left: 10px;
   }
   main .main-container .text-container h3 {
+    margin-top: 6vh;
     padding-right: 25px;
     font-size: 1.08rem;
     text-align: left;
   }
   main .main-container .text-container p {
     padding-right: 30px;
-    font-size: 1.08rem;
+    font-size: 0.96rem;
     text-align: left;
   }
   main .main-container .btn-continue a button {
     width: 85vw;
   }
+}
+
+.input-container h3 {
+  font-size: 1.2rem;
 }
 
 .input-container input {
@@ -186,7 +192,7 @@ main .main-container .btn-continue a button:hover {
   outline: none;
   border: none;
   border-radius: 10px;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .input-container input:hover, .input-container input:focus {
@@ -203,7 +209,7 @@ main .main-container .btn-continue a button:hover {
   border: none;
   background-color: #FFA451;
   color: white;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: bold;
   font-size: 0.96rem;
   cursor: pointer;
@@ -238,6 +244,482 @@ main .main-container .btn-continue a button:hover {
   }
   .btn-start a button {
     width: 75vw;
+  }
+}
+
+.top-section {
+  height: 25vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.top-section .top-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  width: 100%;
+}
+
+.top-section .top-icons .menu-bars {
+  position: relative;
+  margin: 12vh 50vw 5vh 5vw;
+  width: 30px;
+  cursor: pointer;
+}
+
+.top-section .top-icons .menu-bars:hover {
+  background-color: #F3F1F1;
+  -webkit-transition: 240ms ease-in-out;
+  transition: 240ms ease-in-out;
+}
+
+.top-section .top-icons .my-basket {
+  position: relative;
+  width: 100px;
+  margin-top: 5vh;
+  cursor: pointer;
+}
+
+.top-section .top-icons .my-basket:hover {
+  background-color: #F3F1F1;
+  -webkit-transition: 240ms ease-in-out;
+  transition: 240ms ease-in-out;
+}
+
+.text-section {
+  width: 100%;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.text-section p {
+  margin-bottom: 5vh;
+  font-size: 0.96rem;
+}
+
+.text-section p span {
+  font-weight: bold;
+}
+
+.text-section .search-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.text-section .search-input input {
+  background-color: #F3F1F1;
+  width: 60vw;
+  padding: 15px;
+  padding-left: 5vw;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  margin-right: 1vw;
+  font-family: "Lato", sans-serif;
+}
+
+.text-section .search-input input:hover, .text-section .search-input input:focus {
+  background-color: lightgray;
+  -webkit-transition: 240ms ease-in-out;
+  transition: 240ms ease-in-out;
+}
+
+.text-section .search-input #search-icon {
+  position: absolute;
+  margin-left: 2vw;
+}
+
+.text-section .search-input #filter-icon {
+  position: relative;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.text-section .search-input #filter-icon:hover {
+  background-color: #F3F1F1;
+  -webkit-transition: 240ms ease-in-out;
+  transition: 240ms ease-in-out;
+}
+
+.recommended-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.recommended-section .recommended-title {
+  width: 100%;
+  text-align: center;
+}
+
+.recommended-section .recommended-title h1 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 10vh;
+  margin-bottom: 3vh;
+}
+
+.combo-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -ms-flex-direction: row;
+      flex-direction: row;
+}
+
+.combo-cards .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 15vw;
+  height: 35vh;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 5vh 3vw;
+  -webkit-box-shadow: 0 30px 30px #F3F1F1;
+          box-shadow: 0 30px 30px #F3F1F1;
+  cursor: pointer;
+}
+
+.combo-cards .card:hover {
+  background: #F3F1F1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.combo-cards .card .sm-icon {
+  width: 20px;
+}
+
+.combo-cards .card .sm-icon:first-child {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-right: 0.7vw;
+  margin-top: 0.7vh;
+  margin-bottom: 0.7vh;
+}
+
+.combo-cards .card .sm-icon:last-child {
+  width: 25px;
+}
+
+.combo-cards .card .n-money {
+  width: 15px;
+}
+
+.combo-cards .card p {
+  font-weight: bold;
+}
+
+.combo-cards .card .card-image {
+  width: 90px;
+  margin: 1vh auto;
+}
+
+.combo-cards .card .card-bottom {
+  margin-top: 3vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.combo-cards .card .card-bottom #price {
+  color: #FFA451;
+}
+
+.combo-cards .quinoa-fruit {
+  background-color: #ffeddc;
+}
+
+.combo-cards .quinoa-fruit:hover {
+  background-color: #fce0c6;
+}
+
+.combo-cards .tropical-fruit {
+  background-color: #FEF0F0;
+}
+
+.combo-cards .tropical-fruit .sm-icon:first-child {
+  margin-bottom: 2vh;
+}
+
+.combo-cards .tropical-fruit:hover {
+  background-color: #ffdbdb;
+}
+
+.combo-cards .melon-fruit {
+  background-color: #F3F1F1;
+}
+
+.combo-cards .melon-fruit:hover {
+  background-color: #d8d5d5;
+}
+
+.combo-cards .tropical-fruit p, .combo-cards .melon-fruit p {
+  margin-bottom: 1vh;
+}
+
+.combo-cards .tropical-fruit #price, .combo-cards .melon-fruit #price {
+  margin-top: 2vh;
+}
+
+.hottest-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.hottest-cards .hottest-titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hottest-cards .hottest-titles h1, .hottest-cards .hottest-titles h2 {
+  font-weight: bold;
+  margin: 5vh 8vw;
+}
+
+.hottest-cards .hottest-titles h1 {
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-bottom: 4px solid;
+  padding-bottom: 5px;
+  -o-border-image: linear-gradient(to right, #FFA451 35%, transparent 35%) 100% 1;
+     border-image: -webkit-gradient(linear, left top, right top, color-stop(35%, #FFA451), color-stop(35%, transparent)) 100% 1;
+     border-image: linear-gradient(to right, #FFA451 35%, transparent 35%) 100% 1;
+}
+
+.hottest-cards .hottest-titles h2 {
+  font-size: 1.08rem;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.hottest-cards .hottest-titles h2:hover {
+  opacity: 1;
+  font-size: 1.2rem;
+  border-bottom: 4px solid;
+  padding-bottom: 5px;
+  -o-border-image: linear-gradient(to right, #FFA451 35%, transparent 35%) 100% 1;
+     border-image: -webkit-gradient(linear, left top, right top, color-stop(35%, #FFA451), color-stop(35%, transparent)) 100% 1;
+     border-image: linear-gradient(to right, #FFA451 35%, transparent 35%) 100% 1;
+  -webkit-transition: 360ms;
+  transition: 360ms;
+}
+
+@media screen and (max-width: 480px) {
+  .top-section .top-icons .menu-bars {
+    width: 30px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-right: 65vw;
+  }
+  .top-section .top-icons .my-basket {
+    width: 50px;
+    margin-right: 5vw;
+  }
+  .text-section {
+    width: 70%;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .text-section p {
+    margin-left: 8vw;
+    margin-bottom: 0;
+    line-height: 4vh;
+  }
+  .text-section .search-input input {
+    width: 73vw;
+    padding-left: 12vw;
+    margin-top: 2vh;
+    margin-left: 32vw;
+  }
+  .text-section .search-input #search-icon {
+    margin-top: 1vh;
+    margin-left: 37vw;
+  }
+  .text-section .search-input #filter-icon {
+    margin-top: 2vh;
+    margin-left: 2vw;
+  }
+  .recommended-section .recommended-title {
+    text-align: left;
+  }
+  .recommended-section .recommended-title h1 {
+    font-size: 1.1rem;
+    margin-left: 8vw;
+  }
+  .combo-cards .card {
+    width: 35vw;
+    height: 22vh;
+    margin: 0 5vw 0 5vw;
+  }
+  .combo-cards .card .sm-icon {
+    width: 15px;
+  }
+  .combo-cards .card .sm-icon:first-child {
+    margin-top: 2vh;
+  }
+  .combo-cards .card .sm-icon:last-child {
+    width: 15px;
+  }
+  .combo-cards .card p {
+    font-size: 0.7rem;
+    margin: 0 0 1vh 0;
+  }
+  .combo-cards .card .card-image {
+    margin: 0 0 1vh 0;
+    width: 70px;
+  }
+  .combo-cards .card .card-bottom {
+    margin: 0;
+  }
+  .combo-cards .card .card-bottom #price {
+    margin: 0 9vw 0 0;
+  }
+  .combo-cards .quinoa-fruit {
+    margin-left: 33vw;
+  }
+  .combo-cards .tropical-fruit .card-image, .combo-cards .melon-fruit .card-image {
+    width: 100px;
+    margin-bottom: 2vh;
+  }
+  .hottest-cards .hottest-titles {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .hottest-cards .hottest-titles h1 {
+    font-size: 1.1rem;
+  }
+  .hottest-cards .hottest-titles h2 {
+    font-size: 0.8rem;
+  }
+  .hottest-cards .hottest-titles h2:hover {
+    font-size: 1.1rem;
+  }
+  .hottest-cards .hottest-titles h1, .hottest-cards .hottest-titles h2 {
+    margin: 7vh 6vw 2vh 5vw;
+  }
+  .hottest-cards .combo-cards .card {
+    margin: 0 7vw 0 0;
+  }
+  .hottest-cards .combo-cards .quinoa-fruit {
+    margin-left: 38vw;
   }
 }
 /*# sourceMappingURL=style.css.map */

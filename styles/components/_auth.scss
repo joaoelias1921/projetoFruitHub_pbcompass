@@ -1,6 +1,9 @@
 @import '../abstract/variables';
 
 .input-container {
+    h3 {
+        font-size: $textFontSize;
+    }
     input {
         margin-top: 1vh;
         margin-bottom: 5vh;
