@@ -57,6 +57,7 @@
             border: none;
             border-radius: 15px;
             margin-right: 1vw;
+            position: relative;
             font-family: $mainFont;
             &:hover, &:focus {
                 background-color: lightgray;
@@ -325,7 +326,7 @@
                 margin: 0 7vw 0 0;
             }
             .quinoa-fruit {
-                margin-left: 38vw;
+                margin-left: 37vw;
             }
         }
     }
