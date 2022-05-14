@@ -1,0 +1,143 @@
+@import '../abstract/variables';
+
+.general{
+    background-color: $primaryColor;
+    .basketadd-top {
+        @include centered();
+        background-color: $primaryColor;
+        width: 100%;
+        .go-back {
+            width: 100%;
+            @include centered();
+            align-items: flex-start;
+            img {
+                margin: 2.5% 0 0 7%;
+                position: absolute;
+            }
+            button {
+                background-color: white;
+                outline: none;
+                border: none;
+                border-radius: 20px;
+                width: 20%;
+                padding: 8px 6px 8px 20px;
+                margin: 5% 0 0 5%;
+                font-family: $mainFont;
+            }
+        }
+        .fruit-combo {
+            img {
+                width: 150px;
+                margin: 1vh auto 3vh auto;
+            }
+        }
+    }
+
+    .basketadd-details {
+        @include centered();
+        background-color: white;
+        border-radius: 1.5rem 1.5rem 0 0;
+        width: 100%;
+        .amount-title {
+            width: 100%;
+            h1 {
+                text-align: left;
+                margin: 10% 0 6% 6%;
+                font-weight: bold;
+                font-size: 1.5rem;
+            }
+        }
+        .amount {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .amount-ir {
+                @include centered();
+                flex-direction: row;
+                justify-content: left;
+                width: 50%;
+                img {
+                    margin: 0 10% 0 13%;
+                    &:last-child {
+                        width: 35px;
+                    }
+                }
+            }
+            .price {
+                @include centered();
+                flex-direction: row;
+                width: 50%;            
+                #n-money {
+                    height: 15px;
+                    margin: 0 2% 0 45%;
+                }
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        .description {
+            @include centered();
+            width: 100%;
+            .desc-title {
+                width: 100%;
+                h1 {
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                    border-bottom: 2px solid $primaryColor;
+                    border-image: linear-gradient(to right, $primaryColor 48%, transparent 48%) 100% 1;
+                    padding-bottom: 5px;
+                    margin: 14% 0 0 6%;
+                    text-align: left;
+                }
+            }
+            .pack-itens {
+                width: 100%;
+                p {
+                    text-align: left;
+                    margin: 6% 5% 5% 6%;
+                    font-size: 0.9rem;
+                    line-height: 25px;
+                    font-weight: bold;
+                }
+            }
+            .pack-desc {
+                width: 100%;
+                p {
+                    text-align: left;
+                    margin: 5% 10% 6% 6%;
+                    font-size: 0.8rem;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+
+    .basketadd-footer {
+        @include centered();
+        background-color: white;
+        flex-direction: row;
+        width: 100%;
+        .favorite {
+            width: 25%;
+        }
+        .add-button {
+            width: 75%;
+            a {
+                button {
+                    width: 75%;
+                    background-color: $primaryColor;
+                    color: white;
+                    font-family: $mainFont;
+                    padding: 20px;
+                    outline: none;
+                    border: none;
+                    border-radius: 10px;
+                    margin-left: 15%;
+                }
+            }
+        }
+    }
+}

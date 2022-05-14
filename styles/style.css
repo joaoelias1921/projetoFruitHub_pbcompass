@@ -665,6 +665,9 @@ main .main-container .btn-continue a button:hover {
     height: 22vh;
     margin: 0 5vw 0 5vw;
   }
+  .combo-cards .card .n-money {
+    margin-bottom: 0.7vh;
+  }
   .combo-cards .card .sm-icon {
     width: 15px;
   }
@@ -672,7 +675,8 @@ main .main-container .btn-continue a button:hover {
     margin-top: 2vh;
   }
   .combo-cards .card .sm-icon:last-child {
-    width: 15px;
+    width: 20px;
+    margin: 0 0 1vh 0;
   }
   .combo-cards .card p {
     font-size: 0.7rem;
@@ -686,7 +690,7 @@ main .main-container .btn-continue a button:hover {
     margin: 0;
   }
   .combo-cards .card .card-bottom #price {
-    margin: 0 9vw 0 0;
+    margin: 0 9vw 1vh 0;
   }
   .combo-cards .quinoa-fruit {
     margin-left: 33vw;
@@ -722,5 +726,273 @@ main .main-container .btn-continue a button:hover {
   .hottest-cards .combo-cards .quinoa-fruit {
     margin-left: 37vw;
   }
+}
+
+.general {
+  background-color: #FFA451;
+}
+
+.general .basketadd-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: #FFA451;
+  width: 100%;
+}
+
+.general .basketadd-top .go-back {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.general .basketadd-top .go-back img {
+  margin: 2.5% 0 0 7%;
+  position: absolute;
+}
+
+.general .basketadd-top .go-back button {
+  background-color: white;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  width: 20%;
+  padding: 8px 6px 8px 20px;
+  margin: 5% 0 0 5%;
+  font-family: "Lato", sans-serif;
+}
+
+.general .basketadd-top .fruit-combo img {
+  width: 150px;
+  margin: 1vh auto 3vh auto;
+}
+
+.general .basketadd-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: white;
+  border-radius: 1.5rem 1.5rem 0 0;
+  width: 100%;
+}
+
+.general .basketadd-details .amount-title {
+  width: 100%;
+}
+
+.general .basketadd-details .amount-title h1 {
+  text-align: left;
+  margin: 10% 0 6% 6%;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.general .basketadd-details .amount {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.general .basketadd-details .amount .amount-ir {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  width: 50%;
+}
+
+.general .basketadd-details .amount .amount-ir img {
+  margin: 0 10% 0 13%;
+}
+
+.general .basketadd-details .amount .amount-ir img:last-child {
+  width: 35px;
+}
+
+.general .basketadd-details .amount .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  width: 50%;
+}
+
+.general .basketadd-details .amount .price #n-money {
+  height: 15px;
+  margin: 0 2% 0 45%;
+}
+
+.general .basketadd-details .amount .price p {
+  font-size: 1.2rem;
+}
+
+.general .basketadd-details .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.general .basketadd-details .description .desc-title {
+  width: 100%;
+}
+
+.general .basketadd-details .description .desc-title h1 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-bottom: 2px solid #FFA451;
+  -o-border-image: linear-gradient(to right, #FFA451 48%, transparent 48%) 100% 1;
+     border-image: -webkit-gradient(linear, left top, right top, color-stop(48%, #FFA451), color-stop(48%, transparent)) 100% 1;
+     border-image: linear-gradient(to right, #FFA451 48%, transparent 48%) 100% 1;
+  padding-bottom: 5px;
+  margin: 14% 0 0 6%;
+  text-align: left;
+}
+
+.general .basketadd-details .description .pack-itens {
+  width: 100%;
+}
+
+.general .basketadd-details .description .pack-itens p {
+  text-align: left;
+  margin: 6% 5% 5% 6%;
+  font-size: 0.9rem;
+  line-height: 25px;
+  font-weight: bold;
+}
+
+.general .basketadd-details .description .pack-desc {
+  width: 100%;
+}
+
+.general .basketadd-details .description .pack-desc p {
+  text-align: left;
+  margin: 5% 10% 6% 6%;
+  font-size: 0.8rem;
+  line-height: 20px;
+}
+
+.general .basketadd-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: white;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  width: 100%;
+}
+
+.general .basketadd-footer .favorite {
+  width: 25%;
+}
+
+.general .basketadd-footer .add-button {
+  width: 75%;
+}
+
+.general .basketadd-footer .add-button a button {
+  width: 75%;
+  background-color: #FFA451;
+  color: white;
+  font-family: "Lato", sans-serif;
+  padding: 20px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  margin-left: 15%;
 }
 /*# sourceMappingURL=style.css.map */
