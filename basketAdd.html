@@ -17,8 +17,7 @@
 <body>
     <div class="general">
         <header class="basketadd-top">
-            <div class="go-back">   
-                <img src="./images/back-arrow.png" alt="Go back">         
+            <div class="go-back">            
                 <a href="./home.html"><button>Go back</button></a>
             </div>
             <div class="fruit-combo">
@@ -33,14 +32,14 @@
                 </div>
                 <div class="amount">
                     <div class="amount-ir">
-                        <img src="./images/reduce.png" alt="Reduce">
-                        <p>1</p>
-                        <img src="./images/basket-add.png" alt="Increase">
+                        <img onclick="decrease()" src="./images/reduce.png" alt="Reduce">
+                        <p id="combo-amount">1</p>
+                        <img onclick="increase()" src="./images/basket-add.png" alt="Increase">
                     </div>     
 
                     <div class="price">
                         <img id="n-money"src="./images/n-money-black.png" alt="Money">
-                        <p>2,000</p>
+                        <p id="amount-price">2.000</p>
                     </div>
                 </div>
 
@@ -60,7 +59,7 @@
 
         <footer class="basketadd-footer">
             <div class="favorite">
-                <img src="./images/favorite-basket.png" alt="Favorite">
+                <img onclick="alert('Added to Favorites!')" src="./images/favorite-basket.png" alt="Favorite">
             </div>
             <div class="add-button">
                 <a href="./myBasket.html">
@@ -69,5 +68,7 @@
             </div>
         </footer>
     </div>
+
+    <script src="./scripts/basketAdd.js"></script>
 </body>
 </html> 

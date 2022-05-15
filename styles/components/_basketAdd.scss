@@ -17,13 +17,21 @@
             }
             button {
                 background-color: white;
+                background-image: url(../images/back-arrow.png);
+                background-repeat: no-repeat;
+                background-position: 10%;
                 outline: none;
                 border: none;
                 border-radius: 20px;
-                width: 100%;
+                width: 110%;
                 padding: 8px 6px 8px 20px;
-                margin: 8% 0 0 30%;
+                margin: 5% 0 0 25%;
                 font-family: $mainFont;
+                cursor: pointer;
+                &:hover {
+                    background-color: #F3F1F1;
+                    transition: 240ms ease-in-out;
+                }
             }
         }
         .fruit-combo {
@@ -60,9 +68,16 @@
                 width: 50%;
                 img {
                     margin: 0 10% 0 13%;
+                    padding: 5px;
+                    border-radius: 2rem;
+                    cursor: pointer;
                     &:last-child {
-                        width: 35px;
+                        width: 45px;
                     }
+                    &:hover {
+                        background-color: #F3F1F1;
+                        transition: 240ms ease-in-out;
+                    }                    
                 }
             }
             .price {
@@ -99,7 +114,7 @@
                 width: 100%;
                 p {
                     text-align: left;
-                    margin: 6% 5% 5% 6%;
+                    margin: 6% 5% 2% 6%;
                     font-size: 0.9rem;
                     line-height: 25px;
                     font-weight: bold;
@@ -124,6 +139,7 @@
         width: 100%;
         .favorite {
             width: 25%;
+            cursor: pointer;
         }
         .add-button {
             width: 75%;
@@ -138,6 +154,11 @@
                     border: none;
                     border-radius: 10px;
                     margin-left: 15%;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: $primaryColor*0.8;
+                        transition: 240ms ease-in-out;
+                    }
                 }
             }
         }

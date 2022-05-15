@@ -29,46 +29,42 @@
     .track-btn {
         @include centered();
         width: 100%;
-        a {
-            button {
-                padding: 20px;
-                width: 8.5rem;
-                margin-top: 20%;
-                background-color: $primaryColor;
-                outline: none;
-                border: none;
-                color: white;
-                border-radius: 10px;
-                cursor: pointer;
-                &:hover {
-                    background-color: white;
-                    color: $primaryColor;
-                    border: 1px solid $primaryColor;
-                    transition: 240ms ease-in-out;
-                }
+        button {
+            padding: 20px;
+            width: 8.5rem;
+            margin-top: 10%;
+            background-color: $primaryColor;
+            outline: none;
+            border: none;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+            &:hover {
+                background-color: white;
+                color: $primaryColor;
+                border: 1px solid $primaryColor;
+                transition: 240ms ease-in-out;
             }
         }
     }
     .continue-shop {
         @include centered();
         width: 100%;
-        a {
-            button {
-                padding: 20px;
-                width: 12rem;
-                margin-top: 20%;
-                background-color: white;
-                outline: none;
-                border: 1px solid $primaryColor;
-                color: $primaryColor;
-                border-radius: 10px;
-                cursor: pointer;
-                &:hover {
-                    background-color: $primaryColor;
-                    color: white;
-                    transition: 240ms ease-in-out;
-                }
+        button {
+            padding: 20px;
+            width: 12rem;
+            margin-top: 10%;
+            background-color: white;
+            outline: none;
+            border: 1px solid $primaryColor;
+            color: $primaryColor;
+            border-radius: 10px;
+            cursor: pointer;
+            &:hover {
+                background-color: $primaryColor;
+                color: white;
+                transition: 240ms ease-in-out;
             }
-        }
+        }        
     }
 }
