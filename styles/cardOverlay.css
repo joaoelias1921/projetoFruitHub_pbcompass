@@ -1,0 +1,123 @@
+/* Card Info Overlay (background) */
+#card-info {
+    /* Height & width depends on how you want to reveal the overlay */   
+    height: 0;
+    width: 100%;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: white; /* Fallback color */
+    border-radius: 0 0 2rem 2rem;
+    overflow-y: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide down the overlay */
+  }
+  
+  /* Position the content inside the overlay */
+  #card-info .overlay-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 8%;
+  }
+
+  .holders-name, .card-number, .card-details {
+    width: 100%;
+  }
+
+  .holders-name h1, .card-number h1{
+    text-align: left;
+    font-weight: bold;
+    margin: 3% 0 0 5%;
+  }
+
+  .holders-name input, .card-number input, .card-date input, .card-ccv input {
+    width: 90%;
+    margin: 5% auto;
+    padding: 15px;
+    background-color: #F3F1F1;
+    outline: none;
+    border: none;
+    font-family: 'Lato', sans-serif;
+    border-radius: 10px;
+  }
+
+  .holders-name input:hover, .card-number input:hover, .card-date input:hover, .card-ccv input:hover {
+    background-color: lightgray;
+    transition: 240ms ease-in-out;
+  }
+
+  .card-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .card-date, .card-ccv {
+    width: 50%;    
+  }
+
+  .card-date h1, .card-ccv h1 {
+    font-weight: bold;
+    text-align: left;
+    margin: 5% 0 0 10%;
+  }
+
+  .card-date input {
+    width: 80%;
+  }
+
+  .card-ccv input {
+    width: 80%;
+  }
+
+  .finish-btn {
+    width: 100%;
+    background-color: #FFA451;
+    border-radius: 1.5rem 1.5rem 0 0;
+    margin-top: 8%;
+    padding: 20px;
+  }
+
+  .finish-btn button {
+    padding: 20px;
+    background-color: white;
+    outline: none;
+    border: 1px solid #FFA451;
+    font-family: 'Lato', sans-serif;
+    color: #FFA451;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .finish-btn button:hover {
+      background-color: #FFA451;
+      color: white;
+      border: 2px solid white;
+      transition: 240ms ease-in-out;
+  }
+  
+  /* Position the close button (outside of the overlay) */
+  #closeCompBtn, #closeCardBtn {
+    position: absolute;
+    background-color: rgba(211, 211, 211, 0.877);
+    padding: 5px 15px;
+    border-radius: 30rem;
+    top: 75%;
+    right: 42%;
+    color: black;
+    text-decoration: none;
+    font-size: 50px;
+  }
+
+  #closeCompBtn:hover, #closeCardBtn:hover {
+    background-color: gray;
+    color: white;
+    transition: 240ms ease-in-out;
+  }

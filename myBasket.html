@@ -12,80 +12,141 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css"> 
+    <link rel="stylesheet" href="./styles/completeOverlay.css">
+    <link rel="stylesheet" href="./styles/cardOverlay.css">
     <title>Fruit Hub - My Basket</title>
 </head>
 <body>
-    <header class="mybasket-top">
-        <div class="go-back">   
-            <img src="./images/back-arrow.png" alt="Go back">         
-            <a href="./basketAdd.html"><button>Go back</button></a>
-        </div>
-        <div class="mybasket-title">
-            <h1>My Basket</h1>
-        </div>
-    </header>
-
-    <main>
-        <section class="checkout-items">
-            <ul class="items-list">
-                <li class="item">
-                    <div class="item-image">
-                        <img src="./images/quinoa-fruit.png" alt="Quinoa Fruit Salad">
-                    </div>
-                    <div class="item-desc">
-                        <h1>Quinoa fruit salad</h1>
-                        <p>2packs</p>
-                    </div>
-                    <div class="item-price">
-                        <img src="./images/n-money-black.png" alt="Money">
-                        <p>20,000</p>
-                    </div>
-                </li>
-                <li class="item">
-                    <div class="item-image">
-                        <img src="./images/melon-fruit.png" alt="Melon Fruit Salad">
-                    </div>
-                    <div class="item-desc">
-                        <h1>Melon fruit salad</h1>
-                        <p>2packs</p>
-                    </div>
-                    <div class="item-price">
-                        <img src="./images/n-money-black.png" alt="Money">
-                        <p>20,000</p>
-                    </div>
-                </li>
-                <li class="item">
-                    <div class="item-image">
-                        <img src="./images/tropical-fruit.png" alt="Tropical Fruit Salad">
-                    </div>
-                    <div class="item-desc">
-                        <h1>Tropical fruit salad</h1>
-                        <p>2packs </p>
-                    </div>
-                    <div class="item-price">
-                        <img src="./images/n-money-black.png" alt="Money">
-                        <p>20,000</p>
-                    </div>
-                </li>
-            </ul>
-        </section>
-    </main>
-
-    <footer class="mybasket-footer">
-        <div class="price-section">
-            <div class="total-title">
-                <h1>Total</h1>            
+    <div class="general-content">
+        <header class="mybasket-top">
+            <div class="go-back">   
+                <img src="./images/back-arrow.png" alt="Go back">         
+                <a href="./basketAdd.html"><button>Go back</button></a>
             </div>
-            <div class="total">
-                <img src="./images/n-money-black.png" alt="Money">
-                <p>60,000</p>
+            <div class="mybasket-title">
+                <h1>My Basket</h1>
             </div>
-        </div>
-        <div class="checkout-btn">
-            <a href="#">
-                <button>Checkout</button>
-            </a>
-        </div>
-    </footer>
+        </header>
+
+        <main>
+            <section class="checkout-items">
+                <ul class="items-list">
+                    <li class="item">
+                        <div class="item-image">
+                            <img src="./images/quinoa-fruit.png" alt="Quinoa Fruit Salad">
+                        </div>
+                        <div class="item-desc">
+                            <h1>Quinoa fruit salad</h1>
+                            <p>2packs</p>
+                        </div>
+                        <div class="item-price">
+                            <img src="./images/n-money-black.png" alt="Money">
+                            <p>20,000</p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="item-image">
+                            <img src="./images/melon-fruit.png" alt="Melon Fruit Salad">
+                        </div>
+                        <div class="item-desc">
+                            <h1>Melon fruit salad</h1>
+                            <p>2packs</p>
+                        </div>
+                        <div class="item-price">
+                            <img src="./images/n-money-black.png" alt="Money">
+                            <p>20,000</p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="item-image">
+                            <img src="./images/tropical-fruit.png" alt="Tropical Fruit Salad">
+                        </div>
+                        <div class="item-desc">
+                            <h1>Tropical fruit salad</h1>
+                            <p>2packs </p>
+                        </div>
+                        <div class="item-price">
+                            <img src="./images/n-money-black.png" alt="Money">
+                            <p>20,000</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+        <footer class="mybasket-footer">
+            <div class="price-section">
+                <div class="total-title">
+                    <h1>Total</h1>            
+                </div>
+                <div class="total">
+                    <img src="./images/n-money-black.png" alt="Money">
+                    <p>60,000</p>
+                </div>
+            </div>
+            <div class="checkout-btn">
+                <a href="#">
+                    <button onclick="openCompInfo()">Checkout</button>
+                </a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Complete info overlay -->
+    <div id="complete-info">
+        <!-- Overlay content -->
+        <div class="overlay-content">
+            <div class="delivery-address">
+                <h1>Delivery address</h1>
+                <input type="text" placeholder="10th avenue, Lekki, Lagos State">
+            </div>
+            <div class="number-call">
+                <h1>Number we can call</h1>
+                <input type="number" placeholder="09090605708">
+            </div>
+            <div class="payment-options">
+                <div class="delivery-opt">
+                    <a href="#"><button>Pay on delivery</button></a>
+                </div>
+                <div class="card-opt">
+                    <button onclick="closeCompInfo(); openCardInfo();">Pay with card</button>
+                </div>
+            </div>
+        </div>        
+    </div>
+
+    <!-- Card info overlay -->
+    <div id="card-info">
+        <!-- Overlay content -->
+        <div class="overlay-content">
+            <div class="holders-name">
+                <h1>Card Holders Name</h1>
+                <input type="text" placeholder="Adolphus Chris">
+            </div>
+            <div class="card-number">
+                <h1>Card Number</h1>
+                <input type="number" placeholder="1234 5678 9012 1314">
+            </div>
+            <div class="card-details">
+                <div class="card-date">
+                    <h1>Date</h1>
+                    <input type="text" placeholder="10/30">
+                </div>
+                <div class="card-date">
+                    <h1>CCV</h1>
+                    <input type="number" placeholder="123">
+                </div>
+            </div>
+            <div class="finish-btn">
+                <a href="#"><button>Complete Order</button></a>
+            </div>
+        </div>        
+    </div>
+
+    <!-- Buttons to close the overlay navigation -->
+    <a href="javascript:void(0)" id="closeCompBtn" onclick="closeCompInfo()" hidden>&times;</a>
+    <a href="javascript:void(0)" id="closeCardBtn" onclick="closeCardInfo()" hidden>&times;</a>
+
+    <script src="./scripts/myBasket.js"></script>
 </body>
 </html>

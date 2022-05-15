@@ -353,7 +353,7 @@ main .main-container .btn-continue a button:hover {
 
 .text-section .search-input input {
   background-color: #F3F1F1;
-  background-image: url(/images/search.png);
+  background-image: url(../images/search.png);
   background-repeat: no-repeat;
   background-position: 5%;
   width: 60vw;
@@ -1057,6 +1057,13 @@ main .main-container .btn-continue a button:hover {
   padding: 8px 6px 8px 20px;
   margin: 5% 0 0 25%;
   font-family: "Lato", sans-serif;
+  cursor: pointer;
+}
+
+.mybasket-top .go-back button:hover {
+  background-color: #F3F1F1;
+  -webkit-transition: 240ms ease-in-out;
+  transition: 240ms ease-in-out;
 }
 
 .mybasket-top .mybasket-title {
@@ -1216,6 +1223,7 @@ main .main-container .btn-continue a button:hover {
   text-align: center;
   width: 100%;
   margin-top: 40%;
+  padding-bottom: 10%;
   -ms-flex-direction: row;
       flex-direction: row;
 }
@@ -1302,5 +1310,12 @@ main .main-container .btn-continue a button:hover {
   border: none;
   border-radius: 10px;
   padding: 20px;
+  cursor: pointer;
+}
+
+.mybasket-footer .checkout-btn button:hover {
+  background-color: #e69449;
+  -webkit-transition: 240ms ease-in-out;
+  transition: 240ms ease-in-out;
 }
 /*# sourceMappingURL=style.css.map */

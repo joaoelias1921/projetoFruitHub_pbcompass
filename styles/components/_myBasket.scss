@@ -22,6 +22,11 @@
             padding: 8px 6px 8px 20px;
             margin: 5% 0 0 25%;
             font-family: $mainFont;
+            cursor: pointer;
+            &:hover {
+                background-color: #F3F1F1;
+                transition: 240ms ease-in-out;
+            }
         }
     }
 
@@ -105,6 +110,7 @@
     @include centered();
     width: 100%;
     margin-top: 40%;
+    padding-bottom: 10%;
     flex-direction: row;
     .price-section {
         @include centered();
@@ -147,6 +153,11 @@
             border: none;
             border-radius: 10px;
             padding: 20px;
+            cursor: pointer;
+            &:hover {
+                background-color: $primaryColor*0.9;
+                transition: 240ms ease-in-out;
+            }
         }
     }
 }

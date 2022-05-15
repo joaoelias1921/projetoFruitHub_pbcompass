@@ -1,0 +1,109 @@
+/* Complete Info Overlay (background) */
+#complete-info {
+    /* Height & width depends on how you want to reveal the overlay */   
+    height: 0;
+    width: 100%;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: white; /* Fallback color */
+    border-radius: 0 0 2rem 2rem;
+    overflow-y: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide down the overlay*/
+  }
+  
+  /* Position the content inside the overlay */
+  #complete-info .overlay-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 5%;
+  }
+
+  .delivery-address, .number-call {
+    width: 100%;
+  }
+
+  .delivery-address h1, .number-call h1{
+    text-align: left;
+    font-weight: bold;
+    margin: 3% 0 0 5%;
+  }
+
+  .delivery-address input, .number-call input {
+    width: 90%;
+    margin: 5% auto;
+    padding: 15px;
+    background-color: #F3F1F1;
+    outline: none;
+    border: none;
+    font-family: 'Lato', sans-serif;
+    border-radius: 10px;
+  }
+
+  .delivery-address input:hover, .number-call input:hover {
+    background-color: lightgray;
+    transition: 240ms ease-in-out;
+  }
+
+  .payment-options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .delivery-opt, .card-opt {
+    width: 50%;
+  }
+
+  .delivery-opt button, .card-opt button {
+    padding: 20px;
+    background-color: white;
+    outline: none;
+    border: 1px solid #FFA451;
+    font-family: 'Lato', sans-serif;
+    color: #FFA451;
+    border-radius: 10px;
+    margin-top: 5%;
+    cursor: pointer;
+  }
+
+  .delivery-opt button:hover, .card-opt button:hover {
+    background-color: #FFA451;
+    color: white;
+    transition: 240ms ease-in-out;
+  }
+
+  .delivery-opt button {
+    margin-right: 8%;
+  }
+
+  .card-opt button {
+    margin-left: 13%;
+  }
+  
+  /* Position the close button (outside of the overlay)*/
+  #closeCompBtn, #closeCardBtn {
+    position: absolute;
+    background-color: rgba(211, 211, 211, 0.877);
+    padding: 5px 15px;
+    border-radius: 30rem;
+    top: 70%;
+    right: 42%;
+    color: black;
+    text-decoration: none;
+    font-size: 50px;
+  }
+
+  #closeCompBtn:hover, #closeCardBtn:hover {
+    background-color: gray;
+    color: white;
+    transition: 240ms ease-in-out;
+  }
