@@ -1,0 +1,74 @@
+@import '../abstract/variables';
+
+.congrats-section {
+    width: 100%;
+    @include centered();
+    .congrats-info {
+        width: 100%;
+        @include centered();
+        img {
+            margin: 20% 0 8% 0;
+            width: 180px;
+        }
+        h1 {
+            font-weight: bold;
+            font-size: 1.7rem;
+            margin: 5% auto;
+        }
+        p {
+            margin: 0 16% 5% 16%;
+            font-size: 1.1rem;
+            line-height: 1.8rem;
+        }
+    }
+}
+
+.nav-buttons {
+    @include centered();
+    width: 100%;
+    .track-btn {
+        @include centered();
+        width: 100%;
+        a {
+            button {
+                padding: 20px;
+                width: 8.5rem;
+                margin-top: 20%;
+                background-color: $primaryColor;
+                outline: none;
+                border: none;
+                color: white;
+                border-radius: 10px;
+                cursor: pointer;
+                &:hover {
+                    background-color: white;
+                    color: $primaryColor;
+                    border: 1px solid $primaryColor;
+                    transition: 240ms ease-in-out;
+                }
+            }
+        }
+    }
+    .continue-shop {
+        @include centered();
+        width: 100%;
+        a {
+            button {
+                padding: 20px;
+                width: 12rem;
+                margin-top: 20%;
+                background-color: white;
+                outline: none;
+                border: 1px solid $primaryColor;
+                color: $primaryColor;
+                border-radius: 10px;
+                cursor: pointer;
+                &:hover {
+                    background-color: $primaryColor;
+                    color: white;
+                    transition: 240ms ease-in-out;
+                }
+            }
+        }
+    }
+}

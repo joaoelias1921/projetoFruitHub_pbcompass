@@ -1318,4 +1318,150 @@ main .main-container .btn-continue a button:hover {
   -webkit-transition: 240ms ease-in-out;
   transition: 240ms ease-in-out;
 }
+
+.congrats-section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.congrats-section .congrats-info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.congrats-section .congrats-info img {
+  margin: 20% 0 8% 0;
+  width: 180px;
+}
+
+.congrats-section .congrats-info h1 {
+  font-weight: bold;
+  font-size: 1.7rem;
+  margin: 5% auto;
+}
+
+.congrats-section .congrats-info p {
+  margin: 0 16% 5% 16%;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+}
+
+.nav-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.nav-buttons .track-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.nav-buttons .track-btn a button {
+  padding: 20px;
+  width: 8.5rem;
+  margin-top: 20%;
+  background-color: #FFA451;
+  outline: none;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.nav-buttons .track-btn a button:hover {
+  background-color: white;
+  color: #FFA451;
+  border: 1px solid #FFA451;
+  -webkit-transition: 240ms ease-in-out;
+  transition: 240ms ease-in-out;
+}
+
+.nav-buttons .continue-shop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.nav-buttons .continue-shop a button {
+  padding: 20px;
+  width: 12rem;
+  margin-top: 20%;
+  background-color: white;
+  outline: none;
+  border: 1px solid #FFA451;
+  color: #FFA451;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.nav-buttons .continue-shop a button:hover {
+  background-color: #FFA451;
+  color: white;
+  -webkit-transition: 240ms ease-in-out;
+  transition: 240ms ease-in-out;
+}
 /*# sourceMappingURL=style.css.map */
