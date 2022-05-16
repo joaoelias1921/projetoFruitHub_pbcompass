@@ -113,7 +113,7 @@
     @include centered();
     width: 100%;
     margin-top: 40%;
-    padding-bottom: 10%;
+    padding-bottom: 20%;
     flex-direction: row;
     .price-section {
         @include centered();
@@ -144,7 +144,7 @@
             }
         }
     }
-    .checkout-btn {
+    .checkout {
         @include centered();
         width: 70%;
         button {

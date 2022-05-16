@@ -90,12 +90,12 @@
   }
   
   /* Position the close button (outside of the overlay)*/
-  #closeCompBtn, #closeCardBtn {
+  #closeCompBtn {
     position: absolute;
-    background-color: rgba(211, 211, 211, 0.877);
+    background-color: white;
     padding: 5px 15px;
     border-radius: 30rem;
-    top: 70%;
+    top: 55%;
     right: 42%;
     color: black;
     text-decoration: none;
@@ -103,7 +103,6 @@
   }
 
   #closeCompBtn:hover, #closeCardBtn:hover {
-    background-color: gray;
-    color: white;
+    background-color: lightgray;
     transition: 240ms ease-in-out;
   }
