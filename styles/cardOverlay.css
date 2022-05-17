@@ -1,122 +1,205 @@
 /* Card Info Overlay (background) */
 #card-info {
-    /* Height & width depends on how you want to reveal the overlay */   
-    height: 0;
-    width: 100%;
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    background-color: white; /* Fallback color */
-    border-radius: 0 0 2rem 2rem;
-    overflow-y: hidden; /* Disable horizontal scroll */
-    transition: 0.5s; /* 0.5 second transition effect to slide down the overlay */
-  }
-  
-  /* Position the content inside the overlay */
-  #card-info .overlay-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    margin-top: 8%;
-  }
+  /* Height & width depends on how you want to reveal the overlay */   
+  height: 0;
+  width: 100%;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: white; /* Fallback color */
+  border-radius: 0 0 2rem 2rem;
+  overflow-y: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide down the overlay */
+}
 
-  .holders-name, .card-number, .card-details {
-    width: 100%;
-  }
+/* Position the content inside the overlay */
+#card-info .overlay-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
 
-  .holders-name h1, .card-number h1{
-    text-align: left;
-    font-weight: bold;
-    margin: 3% 0 0 5%;
-  }
+.holders-name, .card-number, .card-details {
+  width: 100%;
+}
 
-  .holders-name input, .card-number input, .card-date input, .card-ccv input {
-    width: 90%;
-    margin: 5% auto;
-    padding: 15px;
-    background-color: #F3F1F1;
-    outline: none;
-    border: none;
-    font-family: 'Lato', sans-serif;
-    border-radius: 10px;
-  }
+.holders-name h1, .card-number h1{
+  text-align: left;
+  font-weight: bold;
+  margin: 2% 0 0 5%;
+}
 
-  .holders-name input:hover, .card-number input:hover, .card-date input:hover, .card-ccv input:hover {
-    background-color: lightgray;
-    transition: 240ms ease-in-out;
-  }
+.holders-name input, .card-number input, .card-date input, .card-ccv input {
+  width: 90%;
+  margin: 1% auto;
+  padding: 15px;
+  background-color: #F3F1F1;
+  outline: none;
+  border: none;
+  font-family: 'Lato', sans-serif;
+  border-radius: 10px;
+}
 
-  .card-details {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-  }
+.holders-name input:hover, .card-number input:hover, .card-date input:hover, .card-ccv input:hover {
+  background-color: lightgray;
+  transition: 240ms ease-in-out;
+}
 
-  .card-date, .card-ccv {
-    width: 50%;    
-  }
+.card-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
 
-  .card-date h1, .card-ccv h1 {
-    font-weight: bold;
-    text-align: left;
-    margin: 5% 0 0 10%;
-  }
+.card-date, .card-ccv {
+  width: 50%;    
+}
 
-  .card-date input {
-    width: 80%;
-  }
+.card-date h1, .card-ccv h1 {
+  font-weight: bold;
+  text-align: left;
+  margin: 2% 0 0 10%;
+}
 
-  .card-ccv input {
-    width: 80%;
-  }
+.card-date input {
+  width: 80%;
+}
 
-  .finish-btn {
-    width: 100%;
+.card-ccv input {
+  width: 80%;
+}
+
+.finish-btn {
+  width: 100%;
+  background-color: #FFA451;
+  border-radius: 1.5rem 1.5rem 0 0;
+  margin-top: 2%;
+  padding: 0 0 50% 0;
+}
+
+.finish-btn button {
+  padding: 20px;
+  background-color: white;
+  width: 20%;
+  margin-top: 1%;
+  outline: none;
+  border: 1px solid #FFA451;
+  font-family: 'Lato', sans-serif;
+  color: #FFA451;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.finish-btn button:hover {
     background-color: #FFA451;
-    border-radius: 1.5rem 1.5rem 0 0;
-    margin-top: 8%;
-    padding: 20px;
-  }
-
-  .finish-btn button {
-    padding: 20px;
-    background-color: white;
-    outline: none;
-    border: 1px solid #FFA451;
-    font-family: 'Lato', sans-serif;
-    color: #FFA451;
-    border-radius: 10px;
-    cursor: pointer;
-  }
-
-  .finish-btn button:hover {
-      background-color: #FFA451;
-      color: white;
-      border: 2px solid white;
-      transition: 240ms ease-in-out;
-  }
-  
-  /* Position the close button (outside of the overlay) */
-  #closeCardBtn {
-    position: absolute;
-    background-color: white;
-    padding: 5px 15px;
-    border-radius: 30rem;
-    top: 73%;
-    right: 42%;
-    color: black;
-    text-decoration: none;
-    font-size: 50px;
-  }
-
-  #closeCompBtn:hover, #closeCardBtn:hover {
-    background-color: lightgray;
+    color: white;
+    border: 2px solid white;
     transition: 240ms ease-in-out;
+}
+
+/* Position the close button (outside of the overlay) */
+#closeCardBtn {
+  position: absolute;
+  background-color: white;
+  padding: 5px 15px;
+  border-radius: 30rem;
+  top: 73%;
+  right: 48%;
+  color: black;
+  text-decoration: none;
+  font-size: 50px;
+}
+
+#closeCompBtn:hover, #closeCardBtn:hover {
+  background-color: lightgray;
+  transition: 240ms ease-in-out;
+}
+
+@media screen and (max-width: 912px) {
+  .holders-name {
+    margin: 10% 0 10% 0;
   }
+  .card-number {
+    margin-bottom: 10%;
+  }
+  .card-date, .card-ccv{
+    margin-bottom: 10%;
+  }
+  .finish-btn {
+    margin-top: 3%;
+    padding: 0 0 50% 0;
+  }
+  .finish-btn button {
+    margin-top: 4%;
+    width: 45%;
+  }
+  #closeCardBtn {
+    right: 46%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .holders-name {
+    margin: 5% 0 3% 0;
+  }
+  .card-number {
+    margin-bottom: 5%;
+  }
+  .finish-btn button {
+    margin-top: 2%;
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .holders-name {
+    margin: 10% 0 10% 0;
+  }
+  .card-number {
+    margin-bottom: 10%;
+  }
+  .card-date, .card-ccv{
+    margin-bottom: 10%;
+  }
+  .finish-btn {
+    margin-top: 3%;
+    padding: 0 0 50% 0;
+  }
+  .finish-btn button {
+    margin-top: 2%;
+    width: 45%;
+  }
+  #closeCardBtn {
+    right: 44%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .holders-name {
+    margin: 15% 0 10% 0;
+  }
+  .card-number {
+    margin-bottom: 10%;
+  }
+  .card-date, .card-ccv{
+    margin-bottom: 20%;
+  } 
+  .finish-btn {
+    margin-top: 3%;
+    padding: 0 0 50% 0;
+  }
+  .finish-btn button {
+    margin-top: 4%;
+    width: 45%;
+  }
+  #closeCardBtn {
+    right: 42%;
+  }
+}

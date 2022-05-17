@@ -113,7 +113,7 @@
     @include centered();
     width: 100%;
     margin-top: 40%;
-    padding-bottom: 20%;
+    padding-bottom: 45%;
     flex-direction: row;
     .price-section {
         @include centered();
@@ -147,8 +147,11 @@
     .checkout {
         @include centered();
         width: 70%;
+        a {
+            width: 100%;
+        }
         button {
-            width: 13rem;
+            width: 80%;
             background-color: $primaryColor;
             font-family: $mainFont;
             color: white;

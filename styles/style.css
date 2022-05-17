@@ -178,6 +178,10 @@ main .main-container .btn-continue a button:hover {
   }
 }
 
+.input-container {
+  margin-top: 10%;
+}
+
 .input-container h3 {
   font-size: 1.2rem;
 }
@@ -185,7 +189,7 @@ main .main-container .btn-continue a button:hover {
 .input-container input {
   margin-top: 1vh;
   margin-bottom: 5vh;
-  padding: 10px;
+  padding: 15px 0 15px 25px;
   width: 42vw;
   background-color: #F3F1F1;
   outline: none;
@@ -457,10 +461,10 @@ main .main-container .btn-continue a button:hover {
   height: 35vh;
   border-radius: 20px;
   padding: 10px;
-  margin: 5vh 3vw;
+  margin: 5vh 3vw 0 0;
   -webkit-box-shadow: 0 30px 30px #F3F1F1;
           box-shadow: 0 30px 30px #F3F1F1;
-  background-image: url(./../../images/favorite.png);
+  background-image: url(../images/favorite.png);
   background-repeat: no-repeat;
   background-position: top 5% right 10%;
   cursor: pointer;
@@ -615,6 +619,35 @@ main .main-container .btn-continue a button:hover {
   transition: 360ms;
 }
 
+@media screen and (max-width: 912px) {
+  .combo-cards .card {
+    width: 30vw;
+    height: 20vh;
+  }
+  .hottest-cards .hottest-titles {
+    margin-right: 7vw;
+  }
+  .hottest-cards .hottest-titles h1 {
+    font-size: 1.4rem;
+  }
+  .hottest-cards .hottest-titles h2 {
+    font-size: 1.1rem;
+  }
+  .hottest-cards .hottest-titles h2:hover {
+    font-size: 1.4rem;
+  }
+  .hottest-cards .hottest-titles h1, .hottest-cards .hottest-titles h2 {
+    margin: 4vh 6vw 2vh 6vw;
+  }
+  .hottest-cards .combo-cards .card {
+    width: 20vw;
+    height: 15vh;
+  }
+  .hottest-cards .combo-cards .card .card-image {
+    margin-top: 30%;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .top-section .top-icons .menu-bars {
     width: 30px;
@@ -699,6 +732,7 @@ main .main-container .btn-continue a button:hover {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    margin-left: 6%;
   }
   .hottest-cards .hottest-titles h1 {
     font-size: 1.1rem;
@@ -710,13 +744,13 @@ main .main-container .btn-continue a button:hover {
     font-size: 1.1rem;
   }
   .hottest-cards .hottest-titles h1, .hottest-cards .hottest-titles h2 {
-    margin: 7vh 6vw 2vh 5vw;
+    margin: 4vh 6vw 2vh 5vw;
   }
   .hottest-cards .combo-cards .card {
     width: 52vw;
     height: 9rem;
     margin: 0 1.5% 0 1.5%;
-    background-image: url(./../../images/favorite.png);
+    background-image: url(../images/favorite.png);
     background-repeat: no-repeat;
     background-position: top 10% right 10%;
   }
@@ -827,7 +861,7 @@ main .main-container .btn-continue a button:hover {
 }
 
 .general .basketadd-top .fruit-combo img {
-  width: 150px;
+  width: 40%;
   margin: 1vh auto 3vh auto;
 }
 
@@ -1026,6 +1060,7 @@ main .main-container .btn-continue a button:hover {
 
 .general .basketadd-footer .favorite {
   width: 25%;
+  margin-bottom: 5%;
   cursor: pointer;
 }
 
@@ -1043,6 +1078,7 @@ main .main-container .btn-continue a button:hover {
   border: none;
   border-radius: 10px;
   margin-left: 15%;
+  margin-bottom: 5%;
   cursor: pointer;
 }
 
@@ -1277,7 +1313,7 @@ main .main-container .btn-continue a button:hover {
   text-align: center;
   width: 100%;
   margin-top: 40%;
-  padding-bottom: 20%;
+  padding-bottom: 45%;
   -ms-flex-direction: row;
       flex-direction: row;
 }
@@ -1355,8 +1391,12 @@ main .main-container .btn-continue a button:hover {
   width: 70%;
 }
 
+.mybasket-footer .checkout a {
+  width: 100%;
+}
+
 .mybasket-footer .checkout button {
-  width: 13rem;
+  width: 80%;
   background-color: #FFA451;
   font-family: "Lato", sans-serif;
   color: white;
@@ -1566,6 +1606,10 @@ main .main-container .btn-continue a button:hover {
   position: absolute;
 }
 
+.ordertrack-top .go-back a {
+  width: 100%;
+}
+
 .ordertrack-top .go-back a button {
   background-color: white;
   background-image: url(../images/back-arrow.png);
@@ -1574,9 +1618,9 @@ main .main-container .btn-continue a button:hover {
   outline: none;
   border: none;
   border-radius: 20px;
-  width: 110%;
+  width: 100%;
   padding: 8px 6px 8px 20px;
-  margin: 5% 0 0 25%;
+  margin: 5% 0 0 15%;
   font-family: "Lato", sans-serif;
   cursor: pointer;
 }
@@ -1736,7 +1780,12 @@ main .main-container .btn-continue a button:hover {
   width: 30px;
 }
 
+.checkout-items ul li .map {
+  width: 100%;
+}
+
 .checkout-items ul li .map img {
+  width: 85%;
   margin-top: 3%;
 }
 

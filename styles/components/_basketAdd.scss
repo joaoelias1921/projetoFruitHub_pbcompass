@@ -36,7 +36,7 @@
         }
         .fruit-combo {
             img {
-                width: 150px;
+                width: 40%;
                 margin: 1vh auto 3vh auto;
             }
         }
@@ -139,6 +139,7 @@
         width: 100%;
         .favorite {
             width: 25%;
+            margin-bottom: 5%;
             cursor: pointer;
         }
         .add-button {
@@ -154,6 +155,7 @@
                     border: none;
                     border-radius: 10px;
                     margin-left: 15%;
+                    margin-bottom: 5%;
                     cursor: pointer;
                     &:hover {
                         background-color: $primaryColor*0.8;

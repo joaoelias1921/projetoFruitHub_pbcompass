@@ -1,13 +1,14 @@
 @import '../abstract/variables';
 
 .input-container {
+    margin-top: 10%;
     h3 {
         font-size: $textFontSize;
     }
     input {
         margin-top: 1vh;
         margin-bottom: 5vh;
-        padding: 10px;
+        padding: 15px 0 15px 25px;
         width: 42vw;
         background-color: #F3F1F1;
         outline: none;
